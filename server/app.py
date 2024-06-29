@@ -1,8 +1,5 @@
-# server/app.py
-
 from flask import Flask
 from flask_migrate import Migrate
-
 from models import db
 
 # create a Flask application instance 
@@ -20,6 +17,6 @@ migrate = Migrate(app, db)
 # initialize the Flask application to use the database
 db.init_app(app)
 
-
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
+
